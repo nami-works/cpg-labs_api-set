@@ -3,8 +3,8 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from pathlib import Path
 
-# Import context chunking system
-from context_chunking import ContextChunker, get_task_stage
+# Import context chunking system - Fixed import path
+from ..context_chunking import ContextChunker, get_task_stage
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 

@@ -17,9 +17,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv
 
-# Import your existing CrewAI setup
-from src.copywriter_crew.crew import SEOLab_CPG
-from context_chunking import ContextChunker, get_task_stage
+# Import your existing CrewAI setup - Fixed import paths
+from .src.copywriter_crew.crew import SEOLab_CPG
+from .context_chunking import ContextChunker, get_task_stage
 
 # Load environment variables
 load_dotenv()
